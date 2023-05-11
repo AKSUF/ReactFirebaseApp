@@ -3,7 +3,7 @@ import classes from '../styles/Video.moduls.css'
 
 export default function Video(){
     return(
-        <a href="quiz.html">
+ 
         <div className={classes.video}>
         <img src={image} alt="Video Title" style={{width: '200px', height: '150px'}} />
 
@@ -13,6 +13,6 @@ export default function Video(){
             <p>Score : Not taken yet</p>
           </div>
         </div>
-      </a>
+  
     )
 }
