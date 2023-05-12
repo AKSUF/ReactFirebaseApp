@@ -1,12 +1,12 @@
-import { Route, Redirect,Link } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
-import { useNavigate } from 'react-router-dom';
+import { Route, Navigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+
 export default function PrivateRoute({ element: Element, ...rest }) {
   const { currentUser } = useAuth();
-  const history=useNavigate();
+
   return currentUser ? (
-   <Route {...rest}>{(props)=><Element {...props}/>}</Route>
+    <Route {...rest} element={Element} />
   ) : (
-    <Link to="/login" />
+    <Navigate to="/login" replace />
   );
 }

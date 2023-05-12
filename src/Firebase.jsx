@@ -6,7 +6,8 @@ const firebaseConfig = {
     projectId: "new-quiz-app-19458",
     storageBucket: "new-quiz-app-19458.appspot.com",
     messagingSenderId: "999301419679",
-    appId: "1:999301419679:web:4476e68c5e0b43649788aa"
+    appId: "1:999301419679:web:4476e68c5e0b43649788aa",
+    databaseURL: "https://new-quiz-app-19458-default-rtdb.asia-southeast1.firebasedatabase.app",
 };
 
 const app = initializeApp(firebaseConfig);
